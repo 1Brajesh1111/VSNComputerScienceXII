@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Operators</h1>
+<h2>The Assignment (=) Operator</h2>
+
+<p>Enter First name and user name:</p>
+<input type="text" id="text1" placeholder="Enter first name">
+<input type="text" id="text2" placeholder="Enter last name">
+<button onclick="Fullname()">Full name</button>
+
+<p id="demo"></p>
+
+<script>
+function Fullname() {
+  // Get the value of the input fields
+  let x = (document.getElementById("text1").value);
+  let y = (document.getElementById("text2").value);
+  
+  // Calculate the sum
+  let z = x + " "+y;
+  
+  // Display the sum
+  document.getElementById("demo").innerHTML = "The fullname of " + x + " and " + y + " is: " + z;
+}
+</script>
+
+</body>
+</html>
