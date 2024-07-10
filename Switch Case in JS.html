@@ -29,30 +29,41 @@ If there is no match, the default code block is executed. -->
 <p id="demo"></p>
 
 <script>
+  let newcase = prompt("type a case you want to choose")
 let day;
-switch (new Date().getDay()) {
-  case 0:
+switch (newcase) {
+  case 'a':
     day = "Sunday";
     break;
-  case 1:
+  case 'b':
     day = "Monday";
     break;
-  case 2:
+  case "c":
     day = "Tuesday";
     break;
-  case 3:
+  case "d":
     day = "Wednesday";
     break;
-  case 4:
+  case 'e':
     day = "Thursday";
     break;
-  case 5:
+  case 'f':
     day = "Friday";
     break;
-  case  6:
+  case  'g':
     day = "Saturday";
-}
-document.getElementById("demo").innerHTML = "Today is " + day;
+    default:
+      day ="Please choose the right day again";
+     
+      // document.getElementById("demo").innerHTML = day;
+      // return;
+
+    }
+    if (day !== "Please choose the right day again") {
+    document.getElementById("demo").innerHTML = "Today is " + day;
+  } else {
+    document.getElementById("demo").innerHTML = day;
+  }
 </script>
 
 </body>
