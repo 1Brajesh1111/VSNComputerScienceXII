@@ -53,16 +53,16 @@ switch (newcase) {
   case  'g':
     day = "Saturday";
     default:
-      day ="Please choose the right day again";
+      day ="error";
      
       // document.getElementById("demo").innerHTML = day;
       // return;
 
     }
-    if (day !== "Please choose the right day again") {
+    if (day !== "error") {
     document.getElementById("demo").innerHTML = "Today is " + day;
   } else {
-    document.getElementById("demo").innerHTML = day;
+    document.getElementById("demo").innerHTML = "Please choose the right day again";
   }
 </script>
 
